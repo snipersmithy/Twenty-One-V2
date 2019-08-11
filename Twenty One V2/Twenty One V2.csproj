@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CGClassLib">
-      <HintPath>Dependencies\CGClassLib.dll</HintPath>
+    <Reference Include="ClassLib">
+      <HintPath>Dependencies\ClassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Quicktools">
+      <HintPath>Dependencies\Quicktools.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
