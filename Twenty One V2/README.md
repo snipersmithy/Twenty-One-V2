@@ -1,5 +1,5 @@
 # Twenty-One-V2
- Version 2 of my pontoon / twenty one app.
+ Version 2 of my pontoon / twenty one app. It is played using the console.
  
  The app uses two .dll files, ClassLib.dll and Quicktools.dll.
  
