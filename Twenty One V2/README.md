@@ -1,5 +1,5 @@
 # Twenty-One-V2
- Version 2 of my pontoon/ twenty one app.
+ Version 2 of my pontoon / twenty one app.
 
  The following methods are used in this program:
 

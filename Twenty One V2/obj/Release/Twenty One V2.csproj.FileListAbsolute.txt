@@ -7,3 +7,12 @@ C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One
 C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One V2.exe
 C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One V2.pdb
 C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\bin\Release\Quicktools.dll
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Release\Twenty One V2.exe.config
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Release\Twenty One V2.exe
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Release\Twenty One V2.pdb
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Release\ClassLib.dll
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Release\Quicktools.dll
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One V2.csproj.CoreCompileInputs.cache
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One V2.csproj.CopyComplete
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One V2.exe
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Release\Twenty One V2.pdb

@@ -20,6 +20,8 @@ namespace Twenty_One_V2
         // Breaks gameplay loop when set to true.
         static bool gameover = false;
 
+        static string quit;
+
         static int dealerpoints;
         static int playerpoints;
 
@@ -45,7 +47,7 @@ namespace Twenty_One_V2
             playerhand.AddMany(pc1, pc2);
         }
 
-        //Responsible for reading out the cards the player holds.
+        //Responsible for reading out the cards the player or the dealer holds.
         static string SummariseHand()
         {
             handsummary = "";
@@ -67,6 +69,27 @@ namespace Twenty_One_V2
             return "In your hand you have the " + handsummary;
         }
 
+        static string SummariseDealer()
+        {
+            handsummary = "";
+            for (var i = 0; i < dealerhand.Count(); i++)
+            {
+                if (i == dealerhand.Count - 1)
+                {
+                    handsummary = handsummary + dealerhand[i].cardname.ToString() + ".";
+                }
+                else if (i == dealerhand.Count - 2)
+                {
+                    handsummary = handsummary + dealerhand[i].cardname.ToString() + " and the ";
+                }
+                else if (i < dealerhand.Count - 1)
+                {
+                    handsummary = handsummary + dealerhand[i].cardname.ToString() + ", ";
+                }
+            }
+            return "The Dealer has the " + handsummary;
+        }
+
         // These are responsible for totting up player and dealer points respectively.
         static int GetPlayerPoints()
         {
@@ -84,7 +107,7 @@ namespace Twenty_One_V2
         static int GetDealerPoints()
         {
             dealerpoints = 0;
-            for (var i = 0; i < playerhand.Count; i++)
+            for (var i = 0; i < dealerhand.Count; i++)
             {
                 dealerpoints = dealerpoints + dealerhand[i].cardvalue;
                 if (dealerpoints > 21 && dealerhand[i].cardname.Contains("Ace"))
@@ -94,7 +117,7 @@ namespace Twenty_One_V2
             }
             return dealerpoints;
         }
-            //Responsible for any deals after the player decides to twist. If the player sticks or is dealt 21 initially this is skipped.
+        //Responsible for any deals after the player decides to twist. If the player sticks or is dealt 21 initially this is skipped.
         static void PlayRound()
         {
             playerhand.Add(new Card());
@@ -102,7 +125,37 @@ namespace Twenty_One_V2
         //Responsible for the dealer's cards being drawn and the dealer's decision making.
         static void DealerRound()
         {
+            dealerhand.AddMany(new Card(),new Card());
+            Console.WriteLine(SummariseDealer());
+            Console.WriteLine("These are worth " + GetDealerPoints() + " points.");
 
+            while (GetDealerPoints() < 22 && GetDealerPoints() < GetPlayerPoints())
+            {
+                Console.WriteLine();
+                Console.WriteLine("Dealer twists!");
+                dealerhand.Add(new Card());
+                Console.WriteLine();
+                Console.WriteLine(SummariseDealer());
+                Console.WriteLine("These are worth " + GetDealerPoints() + " points.");
+            }
+
+
+            if (GetDealerPoints() > 21)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Dealer is bust... You Win!");
+            }
+            else if (GetDealerPoints() > GetPlayerPoints() && GetDealerPoints() <= 21)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Dealer Wins! Dealer has " + GetDealerPoints() + " points and you only have " + GetPlayerPoints() + " points. Unlucky!");
+            }
+            else if (GetDealerPoints() == GetPlayerPoints())
+            {
+                Console.WriteLine();
+                Console.WriteLine("Dealer gets house advantage, Dealer wins with " + GetDealerPoints() + " points.");
+            }
+            
         }
         static void Game()
         {
@@ -157,7 +210,14 @@ namespace Twenty_One_V2
 
                 Game();
 
-                gameover = true;
+                Console.WriteLine("Do you want to play again? (Press Enter to continue or type 'quit' to end game.)");
+                quit = Console.ReadLine();
+                if (quit.ToLower() == "quit")
+                    gameover = true;
+                else
+                {
+                    initdone = false;
+                }
             }
             while (gameover == false);
         }

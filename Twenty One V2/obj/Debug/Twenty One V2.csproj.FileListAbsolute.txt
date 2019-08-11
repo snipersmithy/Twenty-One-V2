@@ -8,3 +8,13 @@ C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V
 C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V2.pdb
 C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\ClassLib.dll
 C:\Users\cex\Documents\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\Quicktools.dll
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\Twenty One V2.exe.config
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\Twenty One V2.exe
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\Twenty One V2.pdb
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\ClassLib.dll
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\bin\Debug\Quicktools.dll
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V2.csprojAssemblyReference.cache
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V2.csproj.CoreCompileInputs.cache
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V2.csproj.CopyComplete
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V2.exe
+F:\Users\GitHub\Twenty-One-V2\Twenty One V2\obj\Debug\Twenty One V2.pdb
